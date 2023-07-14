@@ -93,11 +93,6 @@ input:hover {
   text-align: left;
   padding: 1rem 1.5rem;
 }
-.location,
-.content {
-  padding-top: 1rem;
-  font-size: 8px;
-}
 .sectionText {
   display: flex;
   justify-content: space-between;
