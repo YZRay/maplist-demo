@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  height: 100vh;
+  color: #ffa23e;
+  overscroll-behavior-y: none;
+  background-color: #fff;
+  padding: 2.5rem;
+  display: flex;
+}
+
+#map {
+  flex: 1;
+  height: 100%;
+}
+
+.wrapper {
+  text-align: center;
+  flex-basis: 30rem;
+  padding: 3rem 5rem 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #1d3156;
+}
+
+/* input */
+.input {
+  margin-top: 1.5rem;
+  line-height: 28px;
+  border: 2px solid transparent;
+  border-bottom-color: #cecece;
+  padding: 0.2rem 0;
+  outline: none;
+  background-color: transparent;
+  color: #cecece;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  text-indent: 10px;
+}
+.input:focus,
+input:hover {
+  outline: none;
+  /* padding: 0.2rem 1rem; */
+  border-radius: 1rem;
+  border-color: #a0bbdd;
+}
+.input::placeholder {
+  color: #cecece;
+}
+.input:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.searchBtn,
+.addBtn {
+  text-indent: 0;
+  color: #1d3156;
+  background-color: #e7ecee;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+.hidden {
+  display: none;
+  opacity: 0;
+}
+.active {
+  display: block;
+  opacity: 1;
+  transition: all 1s;
+}
+.form input {
+  width: 100%;
+}
+/* input */
+/* list */
+.list {
+  border: 4px outset #ffa23e;
+  color: #1d3156;
+  border-radius: 12px;
+  background-color: #e7ecee;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem 1.5rem;
+}
+.location,
+.content {
+  padding-top: 1rem;
+  font-size: 8px;
+}
+.sectionText {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  margin-top: 20px;
+  overflow-y: scroll;
+  /* background-color: #fff; */
+}
+ul::-webkit-scrollbar {
+  display: none;
+}
+
+.leaflet-popup {
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 3px solid #ffa23e;
+}
